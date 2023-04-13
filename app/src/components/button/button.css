@@ -1,0 +1,13 @@
+.sep__button-default {
+	padding: .5rem 1rem;
+	color: white;
+	background: var(--color-primary-cyan);
+	font-weight: 500;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.sep__button-default:hover {
+	opacity: 0.6;
+}
