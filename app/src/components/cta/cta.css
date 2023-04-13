@@ -3,7 +3,7 @@
 	padding: 2rem;
 }
 
-.sep__cta-call h1 {
+.sep__cta-call h3 {
 	font-size: 3vw;
 	color: white;
 	text-align: center;
@@ -21,7 +21,7 @@
 		padding: 4rem;
 	}
 
-	.sep__cta-call h1 {
+	.sep__cta-call h3 {
 		font-size: 5vw;
 	}
 }
