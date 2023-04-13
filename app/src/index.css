@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@500;700&family=Roboto:wght@100&display=swap');
+
+:root {
+	--font-family: 'Poppins', sans-serif;
+
+	--color-primary-cyan: hsl(180, 66%, 49%);
+	--color-primary-dark-violet: hsl(257, 27%, 26%);
+
+	--color-secondary-red: hsl(0, 87%, 67%);
+
+	--color-neutral-gray: hsl(0, 0%, 75%);
+	--color-neutral-grayish-violet: hsl(257, 7%, 63%);
+	--color-neutral-very-dark-blue: hsl(255, 11%, 22%);
+	--color-neutral-cery-dark-violet: hsl(260, 8%, 14%);
+
+}
