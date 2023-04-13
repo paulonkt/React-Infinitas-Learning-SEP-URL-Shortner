@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -5,4 +10,15 @@ a {
 body {
 	font-family: var(--font-family);
 	font-size: 18px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.sep__boxed {
+		margin: auto;
+		width: 1024px;
+	}
+	.sep__fluid {
+		margin: auto;
+		width: 100%;
+	}
 }

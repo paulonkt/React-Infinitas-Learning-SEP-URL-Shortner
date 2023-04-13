@@ -1,16 +1,21 @@
 import React from 'react';
 import './App.css';
-import { Feature, Footer, Header, Navbar, Statistics, } from './components';
+import { Cta, Feature, Footer, Header, Navbar, Statistics, } from './components';
 
 function App() {
   return (
-    <div className="App">
+    <div className="sep__app">
 		<div className="navgation-bar">
-			<Navbar/>
-			<Header/>
-			<Feature/>
-			<Statistics/>
-			<Footer/>
+			<div className='sep__boxed'>
+				<Navbar/>
+				<Header/>
+				<Feature/>
+				<Statistics/>
+			</div>
+			<div className='sep__fluid'>
+				<Cta/>
+				<Footer/>
+			</div>
 		</div>
     </div>
   );
