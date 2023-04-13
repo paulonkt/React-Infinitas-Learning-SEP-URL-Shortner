@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
-import logo from '../../assets/logo.svg';
+import Logo from '../common/logo/Logo';
+import Button from '../common/button/Button';
 import './navbar.css';
-import Button from '../button/Button';
 
 const Menu = () => (
 	<>
@@ -18,16 +18,14 @@ const Navbar = () => {
 	return (
 		<div className='sep__navbar'>
 			<div className='sep__navbar-links'>
-				<div className='sep__navbar-links_logo'>
-				<img src={logo} alt='logo' />
-				</div>
+				<Logo />
 				<div className="sep__navbar-links_container">
 					<Menu />
 				</div>
 			</div>
 			<div className='sep__navbar-sign'>
 				<p><a href="">Login</a></p>
-				<Button text='Sign Up' action='' />
+				<Button text='Sign Up' />
 			</div>
 			<div className="sep__navbar-menu">
 				{toogleMenu
@@ -40,7 +38,7 @@ const Navbar = () => {
 							<Menu />
 							<div className='sep__navbar-menu_container-links-sign'>
 								<p><a href="">Login</a></p>
-								<Button text='Sign Up' action='' />
+								<Button text='Sign Up' />
 							</div>
 						</div>
 					</div>

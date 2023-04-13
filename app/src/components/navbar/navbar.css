@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 6rem;
+	padding: 2rem 0;
 }
 
 .sep__navbar-links {
@@ -10,10 +10,6 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-}
-
-.sep__navbar-links_logo {
-	margin-right: 2rem;
 }
 
 .sep__navbar-links_container {
@@ -88,9 +84,9 @@
     display: none;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 690px) {
 	.sep__navbar {
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     .sep__navbar-sign {
