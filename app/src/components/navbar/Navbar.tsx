@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 import './navbar.css';
+import Button from '../button/Button';
 
 const Menu = () => (
 	<>
@@ -26,7 +27,7 @@ const Navbar = () => {
 			</div>
 			<div className='sep__navbar-sign'>
 				<p><a href="">Login</a></p>
-				<button type='button'>Sign Up</button>
+				<Button text='Sign Up' action='' />
 			</div>
 			<div className="sep__navbar-menu">
 				{toogleMenu
@@ -39,7 +40,7 @@ const Navbar = () => {
 							<Menu />
 							<div className='sep__navbar-menu_container-links-sign'>
 								<p><a href="">Login</a></p>
-								<button type='button'>Sign Up</button>
+								<Button text='Sign Up' action='' />
 							</div>
 						</div>
 					</div>
