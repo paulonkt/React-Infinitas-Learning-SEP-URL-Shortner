@@ -1,0 +1,9 @@
+.sep__logo {
+	margin-right: 2rem;
+}
+
+@media screen and (max-width: 690px) {
+	.sep__logo {
+		margin-right: 0;
+	}	
+}
