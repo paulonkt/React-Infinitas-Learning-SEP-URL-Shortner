@@ -3,7 +3,6 @@
 	color: white;
 	background: var(--color-primary-cyan);
 	font-weight: 500;
-	border-radius: 30px;
 	border: none;
 	cursor: pointer;
 }
