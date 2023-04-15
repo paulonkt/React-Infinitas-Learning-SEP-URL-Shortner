@@ -7,7 +7,7 @@ const Logo = (props: {
 }) => {
 	return (
 		<div className='sep__logo'>
-			<LogoSVG fill={props.color ? props.color : '#000'} />
+			<LogoSVG fill={props.color ? props.color : '#34313D'} />
 		</div>
 	)
 }
