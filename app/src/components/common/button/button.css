@@ -8,5 +8,6 @@
 }
 
 .sep__button-default:hover {
-	opacity: 0.6;
+	background: var(--color-primary-cyan-hover);
+    transition: 0.5s;
 }
