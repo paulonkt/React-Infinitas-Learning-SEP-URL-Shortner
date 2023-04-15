@@ -4,9 +4,9 @@ import './header.css';
 
 const Header = () => {
 	return (
-		<div className='sep__header' id="home">
-			<div className="sep__header-content">
-				<div className="sep__header-texts">
+		<div className='sep__header' id='home'>
+			<div className='sep__header-content'>
+				<div className='sep__header-texts'>
 					<h1>
 						More than just<br/>
 						shorter links
@@ -16,10 +16,10 @@ const Header = () => {
 						insights on how your links are performing.
 					</p>
 					<div className='sep__header-button_center'>
-						<Button text="Get Started" height={40} width={140} />
+						<Button text='Get Started' height='40px' width='140px' />
 					</div>
 				</div>
-				<div className="sep__header-image">
+				<div className='sep__header-image'>
 					<img src={working} />
 				</div>
 			</div>

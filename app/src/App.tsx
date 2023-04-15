@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { Cta, Feature, Footer, Header, Navbar, Statistics, } from './components';
 
