@@ -2,10 +2,11 @@ import './button.css';
 
 const Button = (props: {
 	text: string, 
-	height?: number, 
-	width?: number, 
-	radius?: number,
-	action?: string 
+	height?: string, 
+	width?: string, 
+	radius?: string,
+	action?: string
+
 }) => {
 
 	return (
@@ -13,9 +14,9 @@ const Button = (props: {
 			type='button' 
 			style={
 				{ 
-					height: props.height ? props.height : 32,
-					width: props.width ? props.width : 80,
-					borderRadius: props.radius ? props.radius : 30
+					height: props.height ? props.height : '32px',
+					width: props.width ? props.width : '80px',
+					borderRadius: props.radius ? props.radius : '30px'
 				}
 			}
 			className='sep__button-default'
