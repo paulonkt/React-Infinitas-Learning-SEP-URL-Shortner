@@ -20,16 +20,7 @@
 	padding-right: 5rem;
 }
 
-.sep__header-content h1 {
-	font-size: 5vw;
-	line-height: 5.4vw;
-	font-weight: 700;
-	letter-spacing: -0.1rem;
-}
-
 .sep__header-content p {
-	color: var(--color-neutral-gray);
-	font-weight: 500;
 	margin: 0 0 2rem 0;
 }
 
@@ -62,8 +53,6 @@
 	}
 
 	.sep__header-content h1 {
-		font-size: 11vw;
-		line-height: 13vw;
 		text-align: center;
 		width: 100%;
 	}

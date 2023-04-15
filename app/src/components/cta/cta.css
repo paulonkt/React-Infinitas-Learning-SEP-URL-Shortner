@@ -4,7 +4,6 @@
 }
 
 .sep__cta-call h3 {
-	font-size: 3vw;
 	color: white;
 	text-align: center;
 	margin-bottom: 1rem;
@@ -19,9 +18,5 @@
 	.sep__cta {
 		background: var(--color-primary-dark-violet) url('../../assets/bg-boost-mobile.svg') no-repeat center;
 		padding: 4rem;
-	}
-
-	.sep__cta-call h3 {
-		font-size: 5vw;
 	}
 }

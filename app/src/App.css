@@ -12,6 +12,28 @@ body {
 	font-size: 18px;
 }
 
+h1 {
+	font-size: 5vw;
+	line-height: 5.4vw;
+	font-weight: 700;
+	letter-spacing: -0.1rem;
+}
+
+h3 {
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 1.4vw;
+	font-weight: 700;
+}
+
+p {
+	font-weight: 500;
+	color: var(--color-neutral-gray);
+}
+
 @media only screen and (min-width: 1024px) {
 	.sep__boxed {
 		margin: auto;
@@ -20,5 +42,28 @@ body {
 	.sep__fluid {
 		margin: auto;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	h1 {
+		font-size: 11vw;
+		line-height: 13vw;
+	}
+
+	h3 {
+		font-size: 6vw;
+	}
+	
+	h4 {
+		font-size: 5vw;
+	}
+
+	p {
+		font-size: 4vw;
+	}
+
+	.sep__boxed {
+		padding: 0 1rem;
 	}
 }

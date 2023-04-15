@@ -10,9 +10,9 @@ function App() {
 				<Navbar/>
 				<Header/>
 				<Feature/>
-				<Statistics/>
 			</div>
 			<div className='sep__fluid'>
+				<Statistics/>
 				<Cta/>
 				<Footer/>
 			</div>
