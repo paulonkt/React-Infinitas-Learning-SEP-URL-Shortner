@@ -8,9 +8,9 @@ function App() {
 			<div className='sep__boxed'>
 				<Navbar/>
 				<Header/>
-				<Feature/>
 			</div>
 			<div className='sep__fluid'>
+				<Feature/>
 				<Statistics/>
 				<Cta/>
 				<Footer/>
