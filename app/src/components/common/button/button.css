@@ -1,4 +1,4 @@
-.sep__button-default {
+.sep__button-default_cyan {
 	padding: .5rem 1rem;
 	color: white;
 	background: var(--color-primary-cyan);
@@ -7,7 +7,16 @@
 	cursor: pointer;
 }
 
-.sep__button-default:hover {
+.sep__button-default_violet {
+	padding: .5rem 1rem;
+	color: white;
+	background: var(--color-primary-dark-violet);
+	font-weight: 500;
+	border: none;
+}
+
+
+.sep__button-default_cyan:hover {
 	background: var(--color-primary-cyan-hover);
     transition: 0.5s;
 }

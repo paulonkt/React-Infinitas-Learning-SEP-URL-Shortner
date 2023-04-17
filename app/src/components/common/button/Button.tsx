@@ -5,10 +5,9 @@ const Button = (props: {
 	height?: string, 
 	width?: string, 
 	radius?: string,
-	action?: string
-
-}) => {
-
+	isClicked?: boolean,
+	action?: (event: React.MouseEvent<HTMLButtonElement>) => void
+}) => {	
 	return (
 		<button 
 			type='button' 
@@ -16,11 +15,12 @@ const Button = (props: {
 				{ 
 					height: props.height ? props.height : '32px',
 					width: props.width ? props.width : '80px',
-					borderRadius: props.radius ? props.radius : '30px'
+					borderRadius: props.radius ? props.radius : '30px',
 				}
 			}
-			className='sep__button-default'
-		>{props.text}</button>		
+			onClick={props.action}
+			className={!props.isClicked ? 'sep__button-default_cyan' : 'sep__button-default_violet'}
+		>{props.text}</button>
 	)
 }
 
