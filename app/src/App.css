@@ -35,6 +35,12 @@ p {
 	color: var(--color-neutral-gray);
 }
 
+input {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+}
+
 @media only screen and (min-width: 1024px) {
 	.sep__boxed {
 		margin: auto;
@@ -58,10 +64,6 @@ p {
 	
 	h4 {
 		font-size: 5vw;
-	}
-
-	p {
-		font-size: 4vw;
 	}
 
 	.sep__boxed {
