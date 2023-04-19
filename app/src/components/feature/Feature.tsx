@@ -12,13 +12,21 @@ interface IShortenUrl {
 let id = 0;
 
 const getUrlsFromLocalStorage = () => {
-	let urlsFromLocalStorage = localStorage.getItem('urlObj');
+	const urlsFromLocalStorage = localStorage.getItem('urlObj');
 
 	if (urlsFromLocalStorage) {
-		return JSON.parse(urlsFromLocalStorage);
+		return setCopiedButtonsToFalse(JSON.parse(urlsFromLocalStorage));
 	} else {
 		return [];
 	}
+}
+
+const setCopiedButtonsToFalse = (obj: any) => {
+	const urlCleanedCopied: IShortenUrl[] = obj.map( (obj: IShortenUrl) => {
+		return {...obj, isCopied: false};
+	});
+
+	return urlCleanedCopied;
 }
 
 const Feature = () => {
@@ -69,17 +77,14 @@ const Feature = () => {
 			const textToCopy = urlObj[currentIndex]['shortenUrl'];
 			
 			navigator.clipboard.writeText(textToCopy);
-			
-			const urlCleanedCopied: IShortenUrl[] = urlObj.map( (obj: IShortenUrl) => {
-				return {...obj, isCopied: false};
-			});
 
+			const urlObjCopiedFalse = setCopiedButtonsToFalse(urlObj);
 			const updatedUrl = {...urlObj[currentIndex], isCopied: true};
 
 			const newUrlArray = [
-				...urlCleanedCopied.slice(0, currentIndex),
+				...urlObjCopiedFalse.slice(0, currentIndex),
 				updatedUrl,
-				...urlCleanedCopied.slice(currentIndex + 1)
+				...urlObjCopiedFalse.slice(currentIndex + 1)
 			]
 
 			setUrlObj(newUrlArray);
@@ -87,7 +92,7 @@ const Feature = () => {
 			setIsCopied(true);
 		} catch (err) {
 			setIsCopied(false);
-		}
+		};
 	};
 
 	return (
