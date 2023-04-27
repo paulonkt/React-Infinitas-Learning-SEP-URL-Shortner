@@ -9,8 +9,6 @@ interface IShortenUrl {
 	isCopied: boolean;
 }
 
-let id = 0;
-
 const getUrlsFromLocalStorage = () => {
 	const urlsFromLocalStorage = localStorage.getItem('urlObj');
 
@@ -30,6 +28,7 @@ const setCopiedButtonsToFalse = (obj: any) => {
 }
 
 const Feature = () => {
+	const [idCounter, setIdCounter] = useState(0);
 	const [url, setUrl] = useState('');
 	const [isEmpty, setEmpty] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
@@ -47,13 +46,15 @@ const Feature = () => {
 		} else {
 			setEmpty(false);
 			try {
+				const idIncrement = idCounter + 1;
+				setIdCounter(idIncrement);
 				setIsLoading(true);
 				const resultFromAPI = 	await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
 				const dataJSON = await resultFromAPI.json();
 				const dataToBeSeted = [
 					...urlObj,
 					{
-						id: id++,
+						id: idCounter,
 						originalUrl: dataJSON.result.original_link, 
 						shortenUrl: dataJSON.result.full_short_link,
 						isCopied: false
